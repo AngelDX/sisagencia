@@ -31,9 +31,15 @@
 				<p>Puedes planear tu viaje a cualquier parte del Perú, haciendo clic en los enlaces de nuestra página</p>
 			</div>
 		</div>
-		<div class="slider"></div>
+		<div class="slider">
+			<img src="recursos/img/slider.jpg" alt="">
+		</div>
 	</section>
-	<footer></footer>
+	<footer>
+		<p>Dirección: Jr. Huancane 23434</p>
+		<p>Telefono: 452446</p>
+		<p>Juliaca 2016</p>
+	</footer>
 </div>	
 </body>
 </html>

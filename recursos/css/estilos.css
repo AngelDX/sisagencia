@@ -46,8 +46,12 @@ header h1{
 	border-radius: 50%;
 	margin: 5px 10px 0px 0px;
 	box-shadow: 5px 5px 5px black;
+
 }
 
+.logo img:hover{
+	transform: translateX(-20px);
+}
 
 nav{
 	background-color: #00BCD4;
@@ -79,6 +83,71 @@ nav ol{
 	text-shadow: 2px 2px 2px black;
 }
 
+
+section{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.mensaje{
+	width: 30%;
+	text-align: center;
+	border: 1px solid black;
+	margin: 20px 0px 0px 20px;
+	border-radius: 10px;
+	background-color: #1DE9B6;
+	box-shadow: 5px 5px 10px black;
+}
+
+.mtitulo{
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.mtitulo h2{
+	margin: 0px;
+
+}
+
+.texto{
+	
+}
+
+.slider{
+	width: 60%;
+	text-align: right;
+}
+
+.slider img{
+	width: 80%;
+}
+
+.slider img:hover{
+	transform: rotate(10deg);
+}
+
+
+footer{
+	margin-top: 10px;
+	background-color: #03A9F4;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+@keyframes fadeIn{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+
 @media all and (max-width: 600px) {
 
 	.titulo{
@@ -90,16 +159,14 @@ nav ol{
 		text-align: center;
 	}
 
-}
+	.mensaje{
+		width: 100%;
+		text-align: center;
+	}
 
-@keyframes fadeIn{
-	0%{
-		margin-top: 150%;
+	.slider{
+		width: 100%;
+		text-align: center;
 	}
-	60%{
-		margin-top: -5%;
-	}
-	100%{
-		margin-top: 0%;
-	}
+
 }
