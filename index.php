@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
+0<!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
 	<title>SiSAgencia</title>
+<html lang="es">
+<link rel="stylesheet" href="recursos/css/estilos.css">
 </head>
 <body>
+<div class="contenedor">
 	<header>
 		<div class="titulo">
 			<h1>Agencia de Turismo</h1>
@@ -32,5 +34,6 @@
 		<div class="slider"></div>
 	</section>
 	<footer></footer>
+</div>	
 </body>
 </html>

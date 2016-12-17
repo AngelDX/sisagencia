@@ -1,0 +1,12 @@
+body{
+	background-color: #004D40;
+}
+
+.contenedor{
+	margin: 0 auto;
+	width: 80%;
+	border: 2px solid black;
+	background-color: #01579B;
+	border-radius: 20px;
+	box-shadow: 5px 5px 20px black;
+}
