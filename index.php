@@ -17,9 +17,9 @@
 	</header>
 	<nav>
 		<ol>
-			<li><a href="#">Inicio</a></li>
-			<li><a href="#">Itinerarios</a></li>
-			<li><a href="#">Contáctenos</a></li>
+			<li class="mnu"><a href="#">Inicio</a></li>
+			<li class="mnu"><a href="#">Itinerarios</a></li>
+			<li class="mnu"><a href="#">Contáctenos</a></li>
 		</ol>
 	</nav>
 	<section>
