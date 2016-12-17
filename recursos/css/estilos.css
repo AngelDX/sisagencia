@@ -1,5 +1,11 @@
+@font-face{
+   font-family: "AngelDX";
+   src: url("../fonts/Dancing Script OT.otf");
+}
+
 body{
 	background-color: #004D40;
+	font-family:  "AngelDX";
 }
 
 .contenedor{
@@ -9,4 +15,14 @@ body{
 	background-color: #01579B;
 	border-radius: 20px;
 	box-shadow: 5px 5px 20px black;
+}
+
+header{
+	background-color: #0091EA;
+	border-radius: 20px 20px 0px 0px;
+	color: white;
+}
+
+header h1{
+	margin: 0px;
 }
