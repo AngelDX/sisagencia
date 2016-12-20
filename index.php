@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<title>SiSAgencia</title>
 <html lang="es">
+<link rel="stylesheet" href="recursos/css/font-awesome.css">
 <link rel="stylesheet" href="recursos/css/estilos.css">
 </head>
 <body>
@@ -13,7 +14,9 @@
 		</div>
 		<div class="logo">
 			<img src="recursos/img/logo.jpg" alt="Logo">
+			<a href="turistas.php">Sistema</a>
 		</div>
+		
 	</header>
 	<nav>
 		<ol>
