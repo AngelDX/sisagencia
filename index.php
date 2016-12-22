@@ -14,6 +14,8 @@
 		</div>
 		<div class="logo">
 			<img src="recursos/img/logo.jpg" alt="Logo">
+		</div>
+		<div class="sistema">
 			<a href="turistas.php">Sistema</a>
 		</div>
 		

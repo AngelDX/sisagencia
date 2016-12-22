@@ -14,10 +14,10 @@
 	<script type="text/javascript" src="recursos/js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	<h1>Lista de Turistas</h1>
+	<h1 style="color: white">Lista de Turistas</h1>
 	<input type="button" value="Nuevo Turista" onclick="nuevo()">
 	<div class="formulario" style="display: none;">
-		<form action="#">
+		<form action="#" id="formulario">
 			<table border="1px">
 				<tr>
 					<td>Documento</td>
@@ -36,7 +36,7 @@
 					<td><input type="text" name="direccion"></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><button>Guardar</button></td>
+					<td colspan="2" align="center"><button onclick="guardar()">Guardar</button></td>
 				</tr>
 			</table>
 		</form>
@@ -48,6 +48,7 @@
 			<th>Nombres</th>
 			<th>Teléfono</th>
 			<th>Dirección</th>
+			<th>OPt</th>	
 		</tr>
 		<?php 
 			$i=0;
@@ -59,6 +60,7 @@
 			<td><?php echo $rs["nombres"] ?></td>
 			<td><?php echo $rs["telefono"] ?></td>
 			<td><?php echo $rs["direccion"] ?></td>
+			<td><a href="#" onclick="return eliminar(<?php echo $rs["documento"] ?>)">Eliminar</a></td>
 		</tr>
 		<?php } ?>
 	</table>
@@ -68,5 +70,18 @@
 <script>
 	function nuevo(){
 		$(".formulario").toggle().slideDown(1000);
+	}
+
+	function guardar(){
+		$.post( "guardar.php", $( "#formulario" ).serialize(),function(data){
+			alert(data);
+		});
+	}
+
+	function eliminar(dni){
+		$.post( "eliminar.php",{documento:dni},function(data){
+			alert(data);
+			window.location.reload();
+		});
 	}
 </script>

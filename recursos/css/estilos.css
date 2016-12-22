@@ -8,6 +8,7 @@ body{
 	font-family:  "AngelDX";
 }
 
+
 .contenedor{
 	margin: 0 auto;
 	width: 80%;
@@ -24,12 +25,30 @@ header{
 	color: white;
 	display: flex;
 	flex-flow: row wrap;
+	position: relative;
 }
 
 header h1{
 	margin: 0px;
 	margin: 40px 0px 0px 20px;
 	text-shadow: 2px 2px 3px black;
+}
+
+.sistema{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background-color: #00BCD4;
+	padding: 5px 15px 5px 15px;
+	box-shadow: 2px 2px 3px black;
+	border-radius: 10px;
+}
+
+.sistema a{
+	text-decoration: none;
+	color: black;
+	font-family: arial;
+	font-size: 0.7em;
 }
 
 .titulo{
@@ -127,6 +146,10 @@ section{
 	transform: rotate(10deg);
 }
 
+.formulario{
+	background-color: #03A9F4;
+	width: 50%;
+}
 
 footer{
 	margin-top: 10px;
